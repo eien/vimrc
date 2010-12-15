@@ -1,0 +1,6 @@
+[submodule "bundle/obviousmode"]
+	path = bundle/obviousmode
+	url = https://github.com/vim-scripts/Obvious-Mode.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
