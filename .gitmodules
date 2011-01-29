@@ -7,3 +7,9 @@
 [submodule "bundle/Obvious-Mode"]
 	path = bundle/Obvious-Mode
 	url = https://github.com/vim-scripts/Obvious-Mode.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/enaeseth/molokai.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git

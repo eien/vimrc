@@ -1,6 +1,6 @@
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+silent! call pathogen#runtime_append_all_bundles()
+silent! call pathogen#helptags()
 
 " Basics
 set nocompatible
@@ -8,6 +8,15 @@ set noexrc
 set showcmd
 "set background=dark
 syntax on
+set t_Co=256
+" Fallback colorscheme
+if has("gui")
+    colorscheme evening
+else
+	colorscheme ron
+endif
+silent! colorscheme molokai
+
 
 " General
 filetype plugin indent on
@@ -37,11 +46,6 @@ set laststatus=2
 "set list " show tabs
 set listchars=tab:>-,trail:- " show tabs and trailing spaces
 
-if has("gui")
-    colorscheme evening
-else
-    colorscheme ron
-endif
 set tabstop=4
 "set expandtab
 set shiftwidth=4
@@ -60,7 +64,6 @@ set smartcase
 nmap <leader>l :set list!<CR>
  
 " Use the same symbols as TextMate for tabstops and EOLs
-set list
 set listchars=tab:▸\ ,eol:¬
 
 "Invisible character colors
@@ -70,4 +73,6 @@ highlight SpecialKey guifg=#4a4a59
 " Plugins
 "
 "  syntastic
-let g:syntastic_c_check_header = 1
+let g:syntastic_c_check_header=1
+"  taglist
+let g:Tlist_Auto_Open=1
