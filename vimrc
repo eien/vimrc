@@ -76,3 +76,4 @@ highlight SpecialKey guifg=#4a4a59
 let g:syntastic_c_check_header=1
 "  taglist
 let g:Tlist_Auto_Open=1
+let g:Tlist_Exit_OnlyWindow=1
