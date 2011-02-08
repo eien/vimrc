@@ -17,7 +17,6 @@ else
 endif
 silent! colorscheme molokai
 
-
 " General
 filetype plugin indent on
 if version >= 700
@@ -29,7 +28,7 @@ set backupdir=/tmp
 set dir=/tmp
 set fileformats=unix,dos,mac
 set number
-set mouse=a
+silent! set mouse=a
 set ttyfast
 set wildmenu
 set wildmode=list:longest

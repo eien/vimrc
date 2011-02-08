@@ -22,3 +22,9 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/pythonvim"]
+	path = bundle/pythonvim
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "bundle/indentpython"]
+	path = bundle/indentpython
+	url = https://github.com/vim-scripts/indentpython.git
