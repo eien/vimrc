@@ -15,7 +15,7 @@ if has("gui")
 else
 	colorscheme ron
 endif
-silent! colorscheme molokai
+silent! colorscheme solarized
 
 " General
 filetype plugin indent on
