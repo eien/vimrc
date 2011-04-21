@@ -11,7 +11,8 @@ syntax on
 set t_Co=256
 " Fallback colorscheme
 if has("gui")
-    colorscheme evening
+	set guifont=DejaVu\ Sans\ Mono\ 9
+	colorscheme evening
 else
 	colorscheme ron
 endif
