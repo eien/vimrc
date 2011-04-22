@@ -42,16 +42,29 @@ endif
 set hlsearch "highlight the search phrases 
 set incsearch
 set laststatus=2
-"set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]\ %{fugitive#statusline()}
 "set list " show tabs
-set statusline=\ %#StatusLineNC#\|%n\|%*%<\ 
-set statusline+=%t%=
-set statusline+=[%{&ft}\|
-set statusline+=%{strlen(&fenc)?&fenc:'none'}\|
-set statusline+=%{&ff}]\ 
-set statusline+=[]\ [@c\|%p%%-%LL]\ 
-set statusline+=L:\ %#StatusLineNC#[%l]%*\ 
-set statusline+=C:\ %#StatusLineNC#[%c]%*
+" window number
+set statusline=%#StatusLineSeparator#\|
+set statusline+=%#WindowLineNum#\ %{winnr()}\ 
+set statusline+=%#StatusLineSeparator#\|%0*
+" buffer number
+set statusline+=%#StatusLineAlert#%{&modified?'\ '.bufnr('%').'\ ':''}%0*
+set statusline+=%#StatusLineUnalert#%{&modified?'':'\ '.bufnr('%').'\ '}%0*
+set statusline+=%#StatusLineSeparator#\|%0*
+" filename
+set statusline+=\ \"%t\"\ %<
+" right align
+set statusline+=%=
+" file info
+set statusline+=[%{strlen(&ft)?&ft:'none'}\|%{strlen(&fenc)?&fenc:'none'}\|%{&ff}]\ 
+" byte value and syntax highlight type
+set statusline+=\ [%{&wrap?'+':'-'}wrap\|
+set statusline+=%{&expandtab?'+':'-'}xtab\|
+set statusline+=%{&foldenable?'+':'-'}
+set statusline+=%{strpart(&foldmethod,0,3)}
+set statusline+=:%{&foldlevel}]\ \|
+set statusline+=\ L:%l/%L%*\ C:%c%*
+set statusline+=\ %{fugitive#statusline()}
 set listchars=tab:>-,trail:- " show tabs and trailing spaces
 
 set tabstop=4
