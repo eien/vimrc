@@ -44,13 +44,11 @@ set incsearch
 set laststatus=2
 "set list " show tabs
 " window number
-set statusline=%#StatusLineSeparator#\|
-set statusline+=%#WindowLineNum#\ %{winnr()}\ 
-set statusline+=%#StatusLineSeparator#\|%0*
+set statusline=\|\ %{winnr()}\ \|%*
 " buffer number
-set statusline+=%#StatusLineAlert#%{&modified?'\ '.bufnr('%').'\ ':''}%0*
-set statusline+=%#StatusLineUnalert#%{&modified?'':'\ '.bufnr('%').'\ '}%0*
-set statusline+=%#StatusLineSeparator#\|%0*
+set statusline+=%#ErrorMsg#%{&modified?'\ '.bufnr('%').'\ ':''}%*
+set statusline+=%#StatusLineNC#%{&modified?'':'\ '.bufnr('%').'\ '}%*
+set statusline+=\|%*
 " filename
 set statusline+=\ \"%t\"\ %<
 " right align
