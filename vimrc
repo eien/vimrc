@@ -93,6 +93,7 @@ highlight SpecialKey guifg=#4a4a59
 "
 "  syntastic
 let g:syntastic_c_check_header=1
-"  taglist
-let g:Tlist_Auto_Open=1
-let g:Tlist_Exit_OnlyWindow=1
+"  tagbar
+let g:tagbar_left=1
+let g:tagbar_autoshowtag=1
+nmap <leader>t :TagbarToggle<CR>
