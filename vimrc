@@ -25,8 +25,8 @@ if version >= 700
 endif
 set backspace=indent,eol,start
 set backup
-set backupdir=/tmp
-set dir=/tmp
+set backupdir=/tmp//
+set dir=/tmp//
 set fileformats=unix,dos,mac
 set number
 silent! set mouse=a
