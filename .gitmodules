@@ -1,36 +1,3 @@
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/Obvious-Mode"]
-	path = bundle/Obvious-Mode
-	url = https://github.com/vim-scripts/Obvious-Mode.git
-[submodule "bundle/molokai"]
-	path = bundle/molokai
-	url = https://github.com/enaeseth/molokai.git
-[submodule "bundle/Conque-Shell"]
-	path = bundle/Conque-Shell
-	url = https://github.com/vim-scripts/Conque-Shell.git
-[submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = https://github.com/msanders/snipmate.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/pythonvim"]
-	path = bundle/pythonvim
-	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
-[submodule "bundle/indentpython"]
-	path = bundle/indentpython
-	url = https://github.com/vim-scripts/indentpython.git
-[submodule "bundle/solarized"]
-	path = bundle/solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/surround"]
-	path = bundle/surround
-	url = https://github.com/tpope/vim-surround
-[submodule "bundle/tagbar"]
-	path = bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
+[submodule "vundle.git"]
+	path = vundle.git
+	rl = http://github.com/gmarik/vundle.git

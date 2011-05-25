@@ -1,6 +1,19 @@
 filetype off
-silent! call pathogen#runtime_append_all_bundles()
-silent! call pathogen#helptags()
+set rtp+=~/.vim/vundle.git/ 
+call vundle#rc()
+
+" Bundles
+Bundle 'Conque-Shell'
+Bundle 'indentpython'
+Bundle 'python.vim--Vasiliev'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/nerdtree'
+Bundle 'msanders/snipmate.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
 
 " Basics
 set nocompatible
