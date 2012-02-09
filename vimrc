@@ -14,7 +14,10 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
-Bundle 'sjl/threesome'
+Bundle 'sjl/threesome.vim'
+Bundle 'mbadran/headlights'
+
+Bundle 'vim-ruby/vim-ruby'
 
 " Basics
 set nocompatible
