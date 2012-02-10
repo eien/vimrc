@@ -1,5 +1,10 @@
 filetype off
-set rtp+=~/.vim/vundle/ 
+if has("unix")
+	set rtp+=~/.vim/vundle/
+else
+	set rtp+=~/vimfiles/vundle/
+endif
+
 call vundle#rc()
 
 " Bundles
@@ -19,6 +24,9 @@ Bundle 'mbadran/headlights'
 
 Bundle 'vim-ruby/vim-ruby'
 
+scriptencoding utf-8
+set encoding=utf-8
+
 " Basics
 set nocompatible
 set noexrc
@@ -28,7 +36,11 @@ syntax on
 set t_Co=256
 " Fallback colorscheme
 if has("gui")
-	set guifont=DejaVu\ Sans\ Mono\ 9
+	if has("unix")
+		set guifont=DejaVu\ Sans\ Mono\ 9
+	else
+		set guifont=DejaVu_Sans_Mono:h9:cANSI
+	endif
 	colorscheme evening
 else
 	colorscheme ron
@@ -42,8 +54,13 @@ if version >= 700
 endif
 set backspace=indent,eol,start
 set backup
-set backupdir=/tmp//
-set dir=/tmp//
+if has("unix")
+	set backupdir=/tmp//
+	set dir=/tmp//
+else
+	set backupdir=/temp//
+	set dir=/temp//
+endif
 set fileformats=unix,dos,mac
 set number
 silent! set mouse=a
