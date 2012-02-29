@@ -110,7 +110,11 @@ set ruler
 set ignorecase
 set smartcase
 
-
+" Disable arrow keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
 
 
 " Shortcut to rapidly toggle `set list`
