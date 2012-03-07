@@ -26,6 +26,7 @@ Bundle 'sjl/threesome.vim'
 Bundle 'mbadran/headlights'
 
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 
 scriptencoding utf-8
 set encoding=utf-8
@@ -138,3 +139,6 @@ let g:syntastic_c_check_header=1
 let g:tagbar_left=1
 let g:tagbar_autoshowtag=1
 nmap <leader>t :TagbarToggle<CR>
+
+" Vim-Jinja2-Syntax
+autocmd BufNewFile,BufRead *.jinja,*.jinja2 set filetype=jinja
