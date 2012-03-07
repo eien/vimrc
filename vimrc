@@ -24,6 +24,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'sjl/threesome.vim'
 Bundle 'mbadran/headlights'
+Bundle 'kien/ctrlp.vim'
+Bundle 'AutoComplPop'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'Glench/Vim-Jinja2-Syntax'
