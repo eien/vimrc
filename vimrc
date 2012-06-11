@@ -122,7 +122,6 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
  
@@ -137,10 +136,14 @@ highlight SpecialKey guifg=#4a4a59
 "
 "  syntastic
 let g:syntastic_c_check_header=1
+
 "  tagbar
 let g:tagbar_left=1
 let g:tagbar_autoshowtag=1
 nmap <leader>t :TagbarToggle<CR>
+
+"  NERDTree
+nmap <leader>y :NERDTreeToggle<CR>
 
 " Vim-Jinja2-Syntax
 autocmd BufNewFile,BufRead *.jinja,*.jinja2 set filetype=jinja
